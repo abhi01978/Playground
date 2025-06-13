@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Detail - Example Product</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+ <nav class="fixed w-full bg-white/40 backdrop shadow-lg z-50 transition-all duration-300">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 md:px-6">
+    
+    <!-- Logo & Company Info -->
+    <div class="flex items-center space-x-4">
+      <a href="#">
+        <img src="/images/images.png" alt="logo" class="h-12 w-12 rounded-full shadow-sm" />
+      </a>
+      <div class="leading-tight">
+        <h1 class="text-lg sm:text-xl font-bold text-red-600 font-serif">SL SUBH ENTERPRISE</h1>
+        <p class="text-xs sm:text-sm text-black italic font-mono">Playground Equipment Manufacturer</p>
+      </div>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <ul class="hidden lg:flex items-center space-x-6 font-medium text-gray-800">
+      <li class="relative group">
+        <a href="./index.html" class="hover:text-blue-600 transition">Home</a>
+        <!-- Mega Dropdown -->
+        <div class="absolute left-0 top-full mt-3 w-screen max-w-5xl hidden group-hover:grid grid-cols-3 gap-6 p-6 bg-white shadow-xl rounded-md z-50">
+          <div>
+            <h4 class="font-semibold mb-2">Play Systems</h4>
+            <ul>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Play & Learn</a></li>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Inclusive Play</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Outdoor Fitness</h4>
+            <ul>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Strength</a></li>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Cardio</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Theme Play</h4>
+            <ul>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Nature Themes</a></li>
+              <li><a href="#" class="block py-1 text-gray-600 hover:text-blue-600">Fantasy Themes</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><a href="./about.html" class="hover:text-blue-600 transition">About</a></li>
+      <li><a href="./contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle -->
+    <button id="mobile-btn" class="lg:hidden text-3xl text-blue-600 focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-nav" class="hidden lg:hidden backdrop-blur-sm shadow-md px-4 pb-4 pt-2 rounded-b-md">
+    <a href="./index.html" class="block py-2 text-gray-800 hover:text-blue-600 border-b">Home</a>
+    <a href="./about.html" class="block py-2 text-gray-800 hover:text-blue-600 border-b">About</a>
+    <a href="./contact.html" class="block py-2 text-gray-800 hover:text-blue-600">Contact</a>
+  </div>
+</nav>
+
+  <!-- Main Content -->
+  <main class="flex-grow pt-24 pb-12 px-4 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Product Image -->
+      <img src="./images/royal2.webp" alt="Product Image" class="rounded-lg shadow-md w-full">
+
+      <!-- Product Info -->
+      <div>
+        <h1 class="text-3xl font-bold mb-4">Royal Slide </h1>
+        <p class="text-gray-600 dark:text-gray-300 mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel diam ut lorem malesuada bibendum.
+        </p>
+        <!-- <p class="text-2xl font-semibold text-blue-600 mb-4">₹12,500</p> -->
+        <a href="./contact.html"><button class="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">Enquire Now</button></a>
+      </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="mt-12">
+      <h2 class="text-2xl font-bold mb-4">Product Details</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+        <li>Material: High Quality Steel</li>
+        <li>Color: Multiple color options available</li>
+        <li>Size: Customizable</li>
+        <li>Usage: Outdoor playground</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 py-6 text-center text-sm text-gray-600 dark:text-gray-400">
+    &copy; 2025 SL SUBH ENTERPRISE. All rights reserved.
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    document.getElementById('mobile-btn').addEventListener('click', () => {
+      const nav = document.getElementById('mobile-nav');
+      nav.classList.toggle('hidden');
+    });
+
+    // Slider logic
+    function setupSlider(containerId, prevId, nextId) {
+      const container = document.getElementById(containerId);
+      const items = container.children;
+      let idx = 0;
+      document.getElementById(prevId).onclick = () => {
+        idx = (idx - 1 + items.length) % items.length;
+        container.style.transform = `translateX(-${idx * 100}%)`;
+      };
+      document.getElementById(nextId).onclick = () => {
+        idx = (idx + 1) % items.length;
+        container.style.transform = `translateX(-${idx * 100}%)`;
+      };
+    }
+    setupSlider('case-slider', 'case-prev', 'case-next');
+    setupSlider('test-slider', 'test-prev', 'test-next');
+  </script>
+</body>
+</html>

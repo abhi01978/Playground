@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - SL SUBH ENTERPRISE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body class="min-h-screen flex flex-col bg-gray-200">
+
+  <section class=" bg-cover bg-center flex items-center justify-center" style="background-image:url('./images/back.avif');height: 520px;">
+    <div class="bg-black bg-opacity-50 p-10 rounded">
+      <h1 class="text-white text-5xl md:text-6xl font-bold text-center">About Us  SL Subh EnterPrise manufacturing</h1>
+      <p class="text-gray-200 text-xl my-4 text-center">We bring joy, health, and learning through play and fitness.</p>
+      <div class="flex justify-center">
+        <a href="./Products.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md text-lg">Explore Products</a>
+        <a href="./about.html" class="ml-4 border border-white text-white px-6 py-3 rounded-md text-lg hover:bg-white hover:text-gray-800 transition">Appointment</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-800/70 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 shadow-sm z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="flex items-center space-x-3">
+        <a href="#">
+          <img src="/images/images.png" alt="logo" class="h-10 w-10 rounded-full"/>
+        </a>
+        <div class="text-left">
+          <h4 class="text-xl font-bold text-red-500">SL SUBH ENTERPRISE</h4>
+          <p class="text-xs italic text-gray-600 dark:text-gray-400">Playground Equipment</p>
+        </div>
+      </div>
+      <ul class="hidden lg:flex space-x-8 items-center font-medium">
+        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
+        <li><a href="products.html" class="hover:text-blue-600">Products</a></li>
+        <li><a href="about.html" class="text-blue-600 font-semibold underline">About</a></li>
+        <li><a href="contact.html" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+      <button id="mobile-btn" class="lg:hidden text-2xl text-blue-600">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div id="mobile-nav" class="hidden lg:hidden fixed top-[72px] w-full bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 shadow z-40">
+    <a href="./index.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Home</a>
+    <a href="./Products.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Products</a>
+    <a href="./about.html" class="block px-4 py-2 bg-blue-50 dark:bg-gray-700">About</a>
+    <a href="./contact.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">Contact</a>
+  </div>
+
+  <!-- Hero Banner -->
+  <!-- <section class="pt-28 pb-16 px-4 bg-blue-50 dark:bg-gray-800">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-5xl font-extrabold text-blue-600 mb-4">About SL SUBH ENTERPRISE</h1>
+      <p class="text-gray-700 dark:text-gray-300 text-lg max-w-3xl mx-auto">
+        Leading manufacturer and supplier of premium quality playground equipment, committed to creating fun and safe play spaces for children across India.
+      </p>
+    </div>
+  </section> -->
+
+  <!-- About Content -->
+  <main class="max-w-5xl mx-auto px-4 py-16 space-y-12">
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Who We Are</h2>
+      <p class="text-gray-700 dark:text-gray-300 mb-4">
+        SL SUBH ENTERPRISE specializes in designing and manufacturing innovative outdoor playground systems that foster creativity, fitness, and joy in children.
+      </p>
+      <p class="text-gray-700 dark:text-gray-300">
+        With years of industry experience, our dedicated team delivers durable, certified, and eco-friendly play solutions for schools, parks, and communities nationwide.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Our Mission</h2>
+      <p class="text-gray-700 dark:text-gray-300">
+        To inspire children through thoughtfully designed playgrounds that promote active lifestyles, social interaction, and imaginative play.
+      </p>
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-bold mb-4 text-blue-600">Why Choose Us</h2>
+      <ul class="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+        <li>Certified safety standards</li>
+        <li>Customizable designs for unique spaces</li>
+        <li>Premium quality, eco-friendly materials</li>
+        <li>Pan India delivery and reliable support</li>
+      </ul>
+    </div>
+
+    <!-- Product Categories -->
+    <div>
+      <h2 class="text-3xl font-bold mb-8 text-blue-600">Our Product Categories</h2>
+      <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6">
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/Alpine-Slide.webp" alt="Category 1" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Slides</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/playground-swings.jpg" alt="Category 2" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Swings</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/kids-multi-play-station-full.webp" alt="Category 3" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Multi Station</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/tsi-1062b-multiplay-station.jpeg" alt="Category 4" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Multiple Station</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/climing.jpg" alt="Category 5" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Climbers</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/hourse.jpg" alt="Category 6" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Horse Spring Slide</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/royal2.webp" alt="Category 7" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Royal Slide</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/monkey bars.webp" alt="Category 8" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Monkey Bars</h3>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded shadow p-4 text-center hover:shadow-lg transition">
+          <img src="/images/up.jpg" alt="Category 9" class="w-full h-40 object-cover rounded mb-3">
+          <h3 class="text-lg font-semibold">Up bars</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+ <!-- Send Query Form (Updated Professional Version) -->
+<section class="max-w-6xl mx-auto px-4 py-20">
+  <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 md:p-12">
+    <h2 class="text-4xl font-extrabold text-blue-600 mb-6 text-center">Send a Query</h2>
+    <p class="text-gray-600 dark:text-gray-300 mb-10 text-center max-w-3xl mx-auto">
+      Have questions about our products? Drop us a message — we’ll get back to you as soon as possible.
+    </p>
+    <form class="grid md:grid-cols-2 gap-6">
+      <div class="md:col-span-1">
+        <label for="name" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required
+               class="w-full px-5 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-900 dark:text-gray-100">
+      </div>
+      <div class="md:col-span-1">
+        <label for="email" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required
+               class="w-full px-5 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-900 dark:text-gray-100">
+      </div>
+      <div class="md:col-span-2">
+        <label for="message" class="block mb-2 font-semibold text-gray-700 dark:text-gray-300">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+                  class="w-full px-5 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-900 dark:text-gray-100"></textarea>
+      </div>
+      <div class="md:col-span-2 text-center">
+        <button type="submit"
+                class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-bold transition">
+          Send Query
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+  <footer class="bg-gray-300 text-black py-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div>
+        <h4 class="font-bold mb-2">About</h4>
+        <p class="mt-1" style="text-align: justify; margin-left: 10px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;margin-right: 10px;">
+        We “SL SUBH ENTERPRISE” founded in the year 2015 are a renowned firm that is engaged in manufacturing a wide assortment of Multi Playground Equipment, Outdoor Swings, Playground Slides, Kids Climbers..
+     </p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Products</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Slide</a></li>
+          <li><a href="#" class="hover:underline">climber</a></li>
+          <li><a href="#" class="hover:underline">Multisection</a></li>
+          <li><a href="#" class="hover:underline">Royal slide</a></li>
+          <li><a href="#" class="hover:underline">Monkey Bars</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Get Help</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Slide</a></li>
+          <li><a href="#" class="hover:underline">Multisection</a></li>
+          <li><a href="#" class="hover:underline">Climbing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-gray-200 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 p-4 text-center text-gray-500 dark:text-gray-400">
+    &copy; 2025 SL SUBH ENTERPRISE. All rights reserved.
+  </footer>
+
+  <script>
+    const btn = document.getElementById('mobile-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    btn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
